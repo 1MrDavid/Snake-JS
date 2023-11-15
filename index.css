@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Share Tech Mono', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 1rem;
+}
+.boardinfo {
+    width: 22rem;
+}
+.screen {
+    width: 21.87rem;
+    height: 21.87rem;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+#start, .score, #gameOver {
+    font-size: 1.2rem;
+}
+#gameOver {
+    display: none;
+}
+.boardinfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.btn_updown {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.btn {
+    font-family: 'Share Tech Mono', monospace;
+    background-color: #f35a69;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+}
+.buttons .btn {
+    padding: 1.5rem;
+}
+#start_div {
+    display: flex;
+    flex-direction: column;
+}
+#start {
+    padding: 0.5rem;   
+}
+.score {
+    display: inline-flex;
+}
+.square {
+    aspect-ratio: 1;
+}
+.emptySquare {
+    background-color: #456990;
+}
+.snakeSquare {
+    background-color: #ccf47f;
+}
+.foodSquare {
+    background-color: #f35a69;
+}
+#gameOver {
+    color: #f35a69;
+}
